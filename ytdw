@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+from os import system
+outputformat = input('Which format do you want to download? (\033[1;33mMP3\033[m/\033[1;33mMP4\033[m) ').lower() # Choose the output format
+url = input('Paste the video/audio URL to start the download. ') # Get the URL
+if outputformat.find('mp3') != -1:
+
+    # Command to download the file in mp3
+    mp3 = 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg -o "~/Music/%(title)s.%(ext)s" --embed-thumbnail ' + url
+    system(mp3) # Execute the command
+    odir = '~/Music/'
+    
+elif outputformat.find('mp4') != -1:
+
+    # Command to download the file in mp4
+    mp4 = 'youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" -o "~/Videos/%(title)s.%(ext)s" ' + url
+    system(mp4) # Execute the command
+    odir = '~/Videos/'
+    
+print('\033[1;32mDone! \033[mDownloaded file can be found at "{}"!'.format(odir))
