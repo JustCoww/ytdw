@@ -3,7 +3,7 @@ A simple python script to download mp3/mp4 files from the web using youtube-dl.
 
 **Installation**
 
-To install the script follow these instructions [Installation](https://github.com/JustCoww/ytdw/blob/main/installation.md)
+To install the script follow these instructions. [Installation](https://github.com/JustCoww/ytdw/blob/main/installation.md)
 
 
 **Example**
