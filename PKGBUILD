@@ -14,6 +14,8 @@ source=("git+$url")
 md5sums=('SKIP')
 
 package() {
+	mkdir build
+	cd build
 	chmod +x ytdw
 	sudo cp ytdw /usr/bin/
 }
