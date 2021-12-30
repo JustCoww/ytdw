@@ -10,7 +10,7 @@ provides=(ytdw)
 conflicts=(ytdw)
 depends=(python youtube-dl)
 makedepends=('git')
-source=("git+$url")
+source=("git+$url+build")
 md5sums=('SKIP')
 
 package() {
