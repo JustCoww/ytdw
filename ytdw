@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from os import system
 
-outputformat = input('Which format do you want to download? (\033[1;33mMP3\033[m/\033[1;33mMP4\033[m) ').lower() # Choose the output format
+outputformat = input('Which format do you want to download? (\033[1;32mMP3\033[m/\033[1;32mMP4\033[m) ').lower() # Choose the output format
 url = input('Paste the video/audio URL to start the download. ') # Get the URL
 
 if outputformat.find('mp3') != -1:
