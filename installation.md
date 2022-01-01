@@ -18,7 +18,7 @@ To use ytdw you can just run it with something like.
   ```
   python3 ytdw
   ```
-![run](https://user-images.githubusercontent.com/68345611/147855351-ee235123-c305-4cf2-a89a-5e72b7729366.png)
+![run](https://user-images.githubusercontent.com/68345611/147855423-fa7bfe6c-a829-45c0-8360-8a8e1639d89d.png)
 
 
 **Install**
