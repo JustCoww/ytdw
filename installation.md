@@ -1,3 +1,7 @@
+**Dependencies**
+
+You need to have youtube-dl and python installed for the script to work!
+
 **Clone**
 
 First you need to clone the repository to your computer and enter it.
