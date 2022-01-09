@@ -6,8 +6,15 @@ To install the script just run this command in your terminal.
   ```
   git clone https://github.com/JustCoww/ytdw ~/ytdw && sudo cp ~/ytdw/ytdw /usr/bin && sudo chmod +x /usr/bin/ytdw && rm -rf ~/ytdw
   ```
+Read [Installation](https://github.com/JustCoww/ytdw/blob/main/Installation.md) for more info.
   
-Read [Installation](https://github.com/JustCoww/ytdw/blob/main/Installation.md) for more info and uninstallation.
+# Uninstall
+
+**To uninstall the script just run**
+  ```
+  sudo rm /usr/bin/ytdw
+  ```
+**This will remove the script from your system**
 
 
 # Usage
