@@ -1,12 +1,18 @@
-# ytdw (Youtube Downloader)
-A simple python script to download mp3/mp4 files from the web using youtube-dl.
+# Dependencies
+You will need both **youtube-dl** and **python** installed for the script to work and **git** for the installation to work.
 
-**Installation**
+# Install
+To install the script just run this command in your terminal.
+  ```
+  git clone https://github.com/JustCoww/ytdw ~/ytdw && sudo cp ~/ytdw/ytdw /usr/bin && sudo chmod +x /usr/bin/ytdw && rm -rf ~/ytdw
+  ```
+  
+Read [Installation](https://github.com/JustCoww/ytdw/blob/main/Installation.md) for more info and uninstallation.
 
-To install the script follow these instructions. [Installation](https://github.com/JustCoww/ytdw/blob/main/installation.md)
+
+# Usage
+Just run '**ytdw**' in your terminal and follow the instructions.
 
 
-**Example**
-
-![terminal](https://user-images.githubusercontent.com/68345611/147711510-2cfe4d4e-20f6-4c57-a837-679509b10ed4.png)
-![file](https://user-images.githubusercontent.com/68345611/147711512-31137c77-2d6c-4d64-af45-41362d132acf.png)
+# Demo video
+https://user-images.githubusercontent.com/68345611/148702837-7d602dff-b14a-445b-9825-57949c03aa70.mp4
