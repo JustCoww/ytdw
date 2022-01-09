@@ -13,13 +13,13 @@ try:
 
     if arg[1] == '-mp3':
 
-        print('The video will be downloaded to "~/Music"'); sleep(5)
+        print('The audio file will be downloaded to "~/Music"'); sleep(5)
         # Download the file in mp3
         cmd('youtube-dl -x --audio-format mp3 --prefer-ffmpeg -o "~/Music/%(title)s.%(ext)s" --embed-thumbnail ' + arg[2])
 
     elif arg[1] == '-mp4':
 
-        print('The video will be downloaded to "~/Videos"'); sleep(5)
+        print('The video file will be downloaded to "~/Videos"'); sleep(5)
         # Download the file in mp4
         cmd('youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" -o "~/Videos/%(title)s.%(ext)s" ' + arg[2])
 
