@@ -1,21 +1,28 @@
 #!/usr/bin/python3
-from os import system
+from os import system as cmd
+from sys import argv as arg
+from time import sleep
 
-outputformat = input('Which format do you want to download? (\033[1;32mMP3\033[m/\033[1;32mMP4\033[m) ').lower() # Choose the output format
-url = input('Paste the video/audio URL to start the download. ') # Get the URL
+try:
 
-if outputformat.find('mp3') != -1:
+    # Check if the user provided the 2 arguments
+    arg[1]; arg[2]
 
-    # Command to download the file in mp3
-    mp3 = 'youtube-dl -x --audio-format mp3 --prefer-ffmpeg -o "~/Music/%(title)s.%(ext)s" --embed-thumbnail ' + url
-    system(mp3) # Execute the command
-    odir = '~/Music/'
+    print('Format:', arg[1])
+    print('URL:', arg[2])
 
-elif outputformat.find('mp4') != -1:
+    if arg[1] == '-mp3':
 
-    # Command to download the file in mp4
-    mp4 = 'youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" -o "~/Videos/%(title)s.%(ext)s" ' + url
-    system(mp4) # Execute the command
-    odir = '~/Videos/'
+        print('The video will be downloaded to "~/Music"'); sleep(5)
+        # Download the file in mp3
+        cmd('youtube-dl -x --audio-format mp3 --prefer-ffmpeg -o "~/Music/%(title)s.%(ext)s" --embed-thumbnail ' + arg[2])
 
-print('\033[1;32mDone! \033[mDownloaded file can be found at "{}"!'.format(odir))
+    elif arg[1] == '-mp4':
+
+        print('The video will be downloaded to "~/Videos"'); sleep(5)
+        # Download the file in mp4
+        cmd('youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" -o "~/Videos/%(title)s.%(ext)s" ' + arg[2])
+
+except:
+
+    print('Arguments not found, try: "ytdw -(mp3/mp4) (url)')
