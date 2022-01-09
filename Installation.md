@@ -12,6 +12,15 @@ You will need both **youtube-dl** and **python** installed for the script to wor
   ```
   
   
+# Uninstall
+
+**To uninstall the script just run**
+  ```
+  sudo rm /usr/bin/ytdw
+  ```
+**This will remove the script from your system**
+  
+  
 # Command explanation
 
 
@@ -38,12 +47,3 @@ You will need both **youtube-dl** and **python** installed for the script to wor
   rm -rf ~/ytdw
   ```
   **This will remove the repository from your home folder.** 
-  
-  
-# Uninstall
-
-**To uninstall the script just run**
-  ```
-  sudo rm /usr/bin/ytdw
-  ```
-**This will remove the script from your system**
