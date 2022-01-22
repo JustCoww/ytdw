@@ -1,12 +1,28 @@
 # Dependencies
-You will need both **youtube-dl** and **python** installed for the script to work and **git** for the installation to work.
+You will need both **youtube-dl** and **python** installed for the script to work and **git** and **curl** for the installation to work.
 
 # Install
 **Before running this in your terminal please read [Installation](https://github.com/JustCoww/ytdw/blob/main/Installation.md) to understand what this does.**
 
 To install the script just run this command in your terminal.
+
+**Arch Linux**
   ```
-  git clone https://github.com/JustCoww/ytdw ~/ytdw && sudo cp ~/ytdw/ytdw /usr/bin && sudo chmod +x /usr/bin/ytdw && rm -rf ~/ytdw
+  sudo pacman -S curl && sudo curl https://raw.githubusercontent.com/JustCoww/ytdw/main/ytdw -o /usr/bin/ytdw && sudo curl https://yt-dl.org/latest/youtube-dl -o /usr/bin/youtube-dl && sudo chmod a+rx /usr/bin/youtube-dl && sudo chmod a+rx /usr/bin/ytdw
+  ```
+  
+  
+**Debian**
+  ```
+  sudo apt install curl && sudo curl https://raw.githubusercontent.com/JustCoww/ytdw/main/ytdw -o /usr/bin/ytdw  && sudo curl https://yt-dl.org/latest/youtube-dl -o /usr/bin/youtube-dl && sudo chmod a+rx /usr/bin/youtube-dl && sudo chmod a+rx /usr/bin/ytdw
+  ```
+  
+  
+**Other**
+
+Make sure you have curl installed for the installation to function properly.
+  ```
+  sudo curl https://raw.githubusercontent.com/JustCoww/ytdw/main/ytdw -o /usr/bin/ytdw && sudo curl https://yt-dl.org/latest/youtube-dl -o /usr/bin/youtube-dl && sudo chmod a+rx /usr/bin/youtube-dl && sudo chmod a+rx /usr/bin/ytdw
   ```
   
 # Uninstall
@@ -16,6 +32,13 @@ To install the script just run this command in your terminal.
   sudo rm /usr/bin/ytdw
   ```
 **This will remove the script from your system**
+  
+# Uninstall youtube-dl
+
+**To uninstall youtube-dl run**
+  ```
+  sudo rm /usr/bin/youtube-dl
+  ```
 
 
 # Usage
