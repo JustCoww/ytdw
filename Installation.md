@@ -2,15 +2,6 @@
 
 You will need both **youtube-dl** and **python** installed for the script to work and **git** for the installation to work.
 
-
-# Install
-
-**To install the script just run this command in your terminal.**
-
-  ```
-  git clone https://github.com/JustCoww/ytdw ~/ytdw && sudo cp ~/ytdw/ytdw /usr/bin && sudo chmod +x /usr/bin/ytdw && rm -rf ~/ytdw
-  ```
-  
   
 # Uninstall
 
@@ -25,25 +16,13 @@ You will need both **youtube-dl** and **python** installed for the script to wor
 
 
   ```
-  git clone https://github.com/JustCoww/ytdw ~/ytdw
+  sudo curl https://raw.githubusercontent.com/JustCoww/ytdw/main/ytdw -o /usr/bin/ytdw 
   ```
-  **This will clone this this repository to your home folder.**
+  **This will download the script to the bin directory.**
   # 
   
 
   ```
-  sudo cp ~/ytdw/ytdw /usr/bin
+  sudo chmod a+rx /usr/bin/ytdw
   ```
-  **This will copy the script to your bin folder so that you can use it as a normal program in your computer.**
-  # 
-  
-  ```
-  sudo chmod +x /usr/bin/ytdw
-  ```
-  **This will make the script executable**
-  #
-
-  ```
-  rm -rf ~/ytdw
-  ```
-  **This will remove the repository from your home folder.** 
+  **This will make the script executable.**
